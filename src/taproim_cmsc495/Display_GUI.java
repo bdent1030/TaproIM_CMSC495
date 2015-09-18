@@ -16,7 +16,10 @@ public class Display_GUI extends javax.swing.JFrame {
      * Creates new form Display_GUI
      */
     public Display_GUI() {
-        getContentPane().setBackground(Color.BLUE);
+        this.setTitle("                               "
+                + "                                         "
+                + "                      TAPRO-IM SYSTEMS");
+        //getContentPane().setBackground(Color.GRAY);
         initComponents();
     }
 
@@ -29,35 +32,203 @@ public class Display_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        newOrderButton = new javax.swing.JButton();
+        updateCustomerButton = new javax.swing.JButton();
+        updateOrderButton = new javax.swing.JButton();
+        updateShipmentButton = new javax.swing.JButton();
+        cancelOrderButton = new javax.swing.JButton();
+        tableLabel = new javax.swing.JLabel();
+        tablePanel = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        viewOrderTableButton = new javax.swing.JButton();
+        viewShipmentTableButton = new javax.swing.JButton();
+        viewCustomerTableButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 32)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("MAIN GUI DISPLAY UNDER CONSTRUCTION!");
+        newOrderButton.setText("NEW ORDER");
+        newOrderButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newOrderButtonActionPerformed(evt);
+            }
+        });
+
+        updateCustomerButton.setText("UPDATE CUSTOMER");
+        updateCustomerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateCustomerButtonActionPerformed(evt);
+            }
+        });
+
+        updateOrderButton.setText("UPDATE ORDER");
+        updateOrderButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateOrderButtonActionPerformed(evt);
+            }
+        });
+
+        updateShipmentButton.setText("UPDATE SHIPMENT");
+        updateShipmentButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateShipmentButtonActionPerformed(evt);
+            }
+        });
+
+        cancelOrderButton.setText("CANCEL ORDER");
+        cancelOrderButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelOrderButtonActionPerformed(evt);
+            }
+        });
+
+        tableLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        tableLabel.setText("                   TABLE");
+
+        tablePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        javax.swing.GroupLayout tablePanelLayout = new javax.swing.GroupLayout(tablePanel);
+        tablePanel.setLayout(tablePanelLayout);
+        tablePanelLayout.setHorizontalGroup(
+            tablePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tablePanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 639, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        tablePanelLayout.setVerticalGroup(
+            tablePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tablePanelLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        viewOrderTableButton.setText("VIEW ORDER TABLE");
+        viewOrderTableButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewOrderTableButtonActionPerformed(evt);
+            }
+        });
+
+        viewShipmentTableButton.setText("VIEW SHIPMENT TABLE");
+        viewShipmentTableButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewShipmentTableButtonActionPerformed(evt);
+            }
+        });
+
+        viewCustomerTableButton.setText("VIEW CUSTOMER TABLE");
+        viewCustomerTableButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewCustomerTableButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addComponent(tablePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 713, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(newOrderButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(updateCustomerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(viewShipmentTableButton, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(updateOrderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33)
+                        .addComponent(cancelOrderButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tableLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(updateShipmentButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(viewCustomerTableButton, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE))
+                        .addGap(33, 33, 33)
+                        .addComponent(viewOrderTableButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(207, 207, 207)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(191, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(195, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(newOrderButton)
+                    .addComponent(updateOrderButton)
+                    .addComponent(cancelOrderButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(updateCustomerButton)
+                            .addComponent(updateShipmentButton))
+                        .addGap(1, 1, 1))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(viewOrderTableButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewShipmentTableButton)
+                    .addComponent(viewCustomerTableButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tableLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tablePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void newOrderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newOrderButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_newOrderButtonActionPerformed
+
+    private void updateOrderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateOrderButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_updateOrderButtonActionPerformed
+
+    private void cancelOrderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelOrderButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cancelOrderButtonActionPerformed
+
+    private void updateCustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateCustomerButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_updateCustomerButtonActionPerformed
+
+    private void updateShipmentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateShipmentButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_updateShipmentButtonActionPerformed
+
+    private void viewOrderTableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewOrderTableButtonActionPerformed
+        jTextArea1.setText("ORDER TABLE WILL DISPLAY HERE!");
+    }//GEN-LAST:event_viewOrderTableButtonActionPerformed
+
+    private void viewShipmentTableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewShipmentTableButtonActionPerformed
+        jTextArea1.setText("SHIPMENT TABLE WILL DISPLAY HERE!");
+    }//GEN-LAST:event_viewShipmentTableButtonActionPerformed
+
+    private void viewCustomerTableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewCustomerTableButtonActionPerformed
+        jTextArea1.setText("CUSTOMER TABLE WILL DISPLAY HERE!");
+    }//GEN-LAST:event_viewCustomerTableButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton cancelOrderButton;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JButton newOrderButton;
+    private javax.swing.JLabel tableLabel;
+    private javax.swing.JPanel tablePanel;
+    private javax.swing.JButton updateCustomerButton;
+    private javax.swing.JButton updateOrderButton;
+    private javax.swing.JButton updateShipmentButton;
+    private javax.swing.JButton viewCustomerTableButton;
+    private javax.swing.JButton viewOrderTableButton;
+    private javax.swing.JButton viewShipmentTableButton;
     // End of variables declaration//GEN-END:variables
 }

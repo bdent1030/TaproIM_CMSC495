@@ -53,21 +53,16 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <Component id="jLayeredPane1" pref="227" max="32767" attributes="0"/>
+              <Component id="jLayeredPane1" pref="225" max="32767" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="newOrderButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="updateOrderButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="updateCustomerButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Component id="newOrderButton" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="updateOrderButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="updateCustomerButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="updateShipmentButton" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -76,7 +71,7 @@
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="viewCustomerTableButton" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="logOutButton" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -121,9 +116,14 @@
     </Component>
     <Container class="javax.swing.JPanel" name="tablePanel">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-            <LineBorder thickness="3"/>
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder>
+              <Color PropertyName="color" blue="66" green="0" red="0" type="rgb"/>
+            </MatteColorBorder>
           </Border>
         </Property>
       </Properties>
@@ -173,9 +173,9 @@
         <Component class="javax.swing.JLabel" name="tableLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="14" style="1"/>
+              <Font name="Times New Roman" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="                   TABLE"/>
+            <Property name="text" type="java.lang.String" value="      TABLE DISPLAY"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -695,17 +695,17 @@
                           <Component id="customerNameUpdateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="customerNameUpdateField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="customerAddressUpdateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="customerAddressUpdateField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="customerAddressUpdateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="updateCustomerButtonFinal" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="invalidCustomerUpdateLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="99" max="32767" attributes="0"/>
+                      <EmptySpace pref="104" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -810,8 +810,8 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="arrivalDateShippingUpdateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="arrivalDateShippingUpdateField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="arrivalDateShippingUpdateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">

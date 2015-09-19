@@ -133,7 +133,8 @@ private char[] password = {'T','a','p','r','o','4','9','5'};
             //Hide login GUI after successful login
             setVisible(false);
             //Display the main GUI display for the employee after successful login
-            new Display_GUI().setVisible(true);   
+            new Display_GUI().setVisible(true);
+            
             
         }
     }//GEN-LAST:event_LoginButtonActionPerformed
